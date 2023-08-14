@@ -9,3 +9,15 @@ Take for example, advanced stats that we have today. Whether they be Nate Silver
 The analysis tells a picture on how NBA players, specifically the MVP, is picked and what stats specifically let us know the reason that voters might pick them, without any subjective bias like the "eye test" or "dominance" of a player.
 
 ![SCR-20230615-keef](https://github.com/kev374k/NBA_MVP_Analysis/assets/54005848/b0952a8c-41ea-4cbf-a1cd-471f202fefe1)
+Credit to [u/sh00ner](https://www.reddit.com/user/sh00ner/) for the Illustration
+
+### Part 1 - What the Analysis is About
+ 
+
+### Part 2 - Web Scraping
+
+This part deals with getting the data necessary for the analysis. A lot of times, this is the most difficult portion of the process. 
+
+As an avid NBA fan, I've always looked up information on players through [Basketball Reference](https://www.basketball-reference.com), and fortunately, through a thorough amount of searching, I found that Basketball Reference is very useful in this manner. They frequently allow people online to scrap their data, as long as they follow certain rules. 
+
+The main rule was a solution against bots: Not scrapping more than 20 times in one minute.
