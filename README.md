@@ -1,13 +1,11 @@
-# Hardwood_Convergence
-An analysis on how well NBA players do on the court and how valuable they are to their teams. Using www.basketball-reference.com for all stats, including previous MVPs, the season stats(all players), and advanced stats for players
+# An Analysis on the NBA and what Stats may reveal about certain players
 
-# File is Divided into 4 main notebooks. 
-## The First is the Web_Scrapping.ipynb notebook, which is where we got all of the data, which was placed into files/full_player_stats and files/team_records from 1991-2023(2023 season not over yet). We used selenium and requests to web scrap the website and take the tables needed in order to get the correct HTML files and convert them into CSV
+## Overview
 
-## The Second and Third notebooks are the Data_Cleaning.ipynb and Advanced_Stats_Scrapping.ipynb notebooks, which clean the data from the player stats and the MVPs as well as gets the advanced stats like VORP(Value Over Replacement Player), WS(Win Shares), and more in order to help the model more accurately predict the MVP
+I've always been interested in basketball, and specifically, NBA players. NBA players are the best at their sport in the world, but how do they become the best. What stats tell us this?
 
-### This is divided into two files because we wanted to separate the advanced stats and the normal player stats, because we want to see the difference in a model without advanced stats and one with advanced stats would fare compared to the actual MVP
+Take for example, advanced stats that we have today. Whether they be Nate Silver's RAPTOR or Basketball Index's LEBRON stats, I wanted to analyze how good NBA players could be relative to others. To do this, I went through Basketball Reference's stat sheets and analyzed how likely it would be for each individual player in the NBA to receive the annual NBA MVP vote. Note that this was done entirely based on historical data, which was web scrapped from basketball reference's API and webtables, in guidance with their policy on API.
 
-## Finally, the last notebook is the machine_learning.ipynb, which contains the model that we used. We used Ridge(), an extension of the linear regression model from sklearn.linear_model, which takes multiple coefficients from the columns and correlates how effective each is to predict the MVP
+The analysis tells a picture on how NBA players, specifically the MVP, is picked and what stats specifically let us know the reason that voters might pick them, without any subjective bias like the "eye test" or "dominance" of a player.
 
-
+![SCR-20230615-keef](https://github.com/kev374k/NBA_MVP_Analysis/assets/54005848/b0952a8c-41ea-4cbf-a1cd-471f202fefe1)
