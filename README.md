@@ -11,6 +11,7 @@ The analysis tells a picture on how NBA players, specifically the MVP, is picked
 ![SCR-20230615-keef](https://github.com/kev374k/NBA_MVP_Analysis/assets/54005848/b0952a8c-41ea-4cbf-a1cd-471f202fefe1)
 <p style ="text-align: center;">Credit to [u/sh00ner](https://www.reddit.com/user/sh00ner/) for the Illustration</p>
 
+
 ### Part 1 - What the Analysis is About
  
 
