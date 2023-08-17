@@ -8,13 +8,13 @@ Take for example, advanced stats that we have today. Whether they be Nate Silver
 
 The analysis tells a picture on how NBA players, specifically the MVP, is picked and what stats specifically let us know the reason that voters might pick them, without any subjective bias like the "eye test" or "dominance" of a player.
 
-<p style ="text-align: center;">Credit to [u/sh00ner](https://www.reddit.com/user/sh00ner/) for the Illustration</p>
 
-
-=======
 ![rs=w-1209,h-1868](https://github.com/kev374k/Hardwood_Convergence/assets/54005848/c88b6d50-2461-4970-9268-c756f76ec789)
- 
+
 Credit to [u/sh00ner](https://www.reddit.com/user/sh00ner/)
+
+=====
+
 ### Part 1 - What the Analysis is About
 
 At the core, basketball is about getting the ball through the hoop. 
@@ -24,6 +24,8 @@ Yet, it is realistically signficiantly more difficult than that. If making a sho
 Regardless of positions and other advanced stats, I wanted to measure what made the most *valuable* players in the league. Are they the ones with the ball in their hands all of the time? Or are they more off-ball players, who rely on their teammates to get them the ball to shoot?
 
 What factors are most reliant on being the "MVP?". Do MVPs need to play a certain amount of minutes, or does success, in terms of their winning record matter more? In this analysis of NBA MVPs and trying to place the value of a player in a single number, I strived to answer all of these questions.
+
+=====
 
 ### Part 2 - Web Scraping
 
