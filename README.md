@@ -33,4 +33,23 @@ This part deals with getting the data necessary for the analysis. A lot of times
 
 As an avid NBA fan, I've always looked up information on players through [Basketball Reference](https://www.basketball-reference.com), and fortunately, through a thorough amount of searching, I found that Basketball Reference is very useful in this manner. They frequently allow people online to scrap their data, as long as they follow certain rules. 
 
-The main rule was a solution against bots: Not scrapping more than 20 times in one minute.
+The main rule was a solution against bots: Not scrapping more than 20 times in one minute. 
+
+So, in the Notebooks, I tried to make sure that I didn't overload the website and had to separate the steps in which I programmed the results. To begin, I wanted to look at the results of previous MVPs in which there were advanced stats for NBA players. In turn, I also used the *requests* module, in which I looped through the webpage to get the full HTML data, writting it into a new folder. After that, to get it into a much easier format to read and take the tables, I used BeautifulSoup in order to format it correctly.
+
+Then, in order to go through to start a machine-learning model for predicting an MVP, we also need to process additional stats, like PPG, RPG, BPG, APG, etc. This means we would have to web scrape using Selenium on Safari, which doesn't use Chromium. This, along with other uses of the Web Scraper, allows us to format all of the HTML files into different folders in files, which include *"advanced_stats"*, *"full_players_stats"*, *"mvps"*, and *"team_records"*.
+
+Here, we then compress all of the csvs from the different years into a folder called *"scrapped_csvs"*, because it's much easier to read it in pandas with the *read_csv* function.
+
+=====
+
+### Part 3 - Data Cleaning
+
+Most of the time, the longest and hardest part of a data science project involves cleaning the data, which can often have many problems. In terms of this, since Basketball Reference is an affliated partner of the NBA, it is more reliable in that matter. 
+
+First, let's look at the 5 .csv files we have. we have *"files/scrapped_csv/advanced_stats.csv"*, which tracks the Advanced Stats. *"files/scrapped_csv/mvps.csv"* tracks MVP data, including MVP shares, votes, and overall percentage of vote gotten. *"files/scrapped_csv/player_stats"* tracks stats that are traditionally depicted, like PTS, BLKS, REBS, ASTS, etc. *"files/scrapped_csv/team_record.csv"* tracks teh record of teams, because team success is also essential to how likely players are to get MVP votes. Finally, *"files/scrapped_csv/nba_abbreviations.csv"* has the abbreviations of NBA teams to make the merging of different DataFrames easier in the future.
+
+In terms of the all of the data, we try to delete a lot of the columns that we deem unnecessary, including 
+
+
+
