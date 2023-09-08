@@ -15,7 +15,7 @@ Credit to [u/sh00ner](https://www.reddit.com/user/sh00ner/)
 
 =====
 
-### Part 1 - What the Analysis is About
+### Part 1 - General Info
 
 At the core, basketball is about getting the ball through the hoop. 
 
@@ -49,7 +49,20 @@ Most of the time, the longest and hardest part of a data science project involve
 
 First, let's look at the 5 .csv files we have. we have *"files/scrapped_csv/advanced_stats.csv"*, which tracks the Advanced Stats. *"files/scrapped_csv/mvps.csv"* tracks MVP data, including MVP shares, votes, and overall percentage of vote gotten. *"files/scrapped_csv/player_stats"* tracks stats that are traditionally depicted, like PTS, BLKS, REBS, ASTS, etc. *"files/scrapped_csv/team_record.csv"* tracks teh record of teams, because team success is also essential to how likely players are to get MVP votes. Finally, *"files/scrapped_csv/nba_abbreviations.csv"* has the abbreviations of NBA teams to make the merging of different DataFrames easier in the future.
 
-In terms of the all of the data, we try to delete a lot of the columns that we deem unnecessary, including 
+In terms of the all of the data, we try to delete a lot of the columns that we deem unnecessary, including ones that are added when transferring everything into csv files. After that, we want to get rid of players who played for multiple teams in one year. Fortunately, we can create a function that gets rid of extra players who played for certain teams (for example, James Harden played for the Brooklyn Nets and Philadelphia 76ers in the 2021-2022 season. Basketball Reference makes this easy by averaging out the total stats from all the games the player played, which is typically placed into a row with a Team of "TOT") and only using the value that was the total average the player used.
+
+Similarly, with the other csv files, we have to navigate certain problems like formatting, unclear names, as well as different team names (such as when the Charlotte Bobcats changed into the Charlotte Hornets in the 2014 - 2015 season). 
+
+After all the cleaning of the main csv files, we can combine them into one main DataFrame, which we now can filter and sort out for main data. 
+
+Finally, we put all of the information into one main csv file, which will be placed into the *"final_player_stats.csv"*, which has all of the main information that can be manipulated in the future.
+
+=====
+
+### Part 4 - Data Manipulation
+
+
+
 
 
 
